@@ -8,7 +8,7 @@ export default function BrandIcon() {
             type="link"
             href="/"
         >
-            <h1 className="font-handwriting text-white text-2xl sm:text-3xl leading-none">
+            <h1 className="py-1 font-handwriting text-2xl text-transparent bg-clip-text bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 sm:text-3xl leading-none">
                 Today's<br/>
                 Target 
             </h1>

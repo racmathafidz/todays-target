@@ -5,13 +5,13 @@ import BrandIcon from 'parts/BrandIcon'
 
 export default function landingPage() {
     return (
-        <div className="w-full h-screen bg-imgBackground bg-cover">
-            <div className="flex flex-col w-full h-screen absolute bg-black bg-opacity-60 items-center">
+        <div className="w-full h-screen bg-cover">
+            <div className="flex flex-col w-full h-screen items-center">
                 <div className="container px-4 lg:px-5 xl:px-3 flex justify-between py-5 items-center">
                     <BrandIcon/>
                     <Button
                         type="link"
-                        href="https://github.com/racmathafidz/racxstudio"
+                        href="https://github.com/racmathafidz/todays-target"
                         target="_blank"
                         isExternal
                     >
@@ -22,17 +22,17 @@ export default function landingPage() {
                 </div>
 
                 <div className="flex flex-col content-center mt-10 sm:mt-20 lg:mt-28 xl:mt-10">
-                    <h1 className="text-8xl sm:text-9xl text-center items-center text-white font-title font-semibold leading-none">
+                    <h1 className="text-8xl sm:text-9xl text-center items-center text-gray-900 font-title font-semibold leading-none">
                         Today's Target
                     </h1>
-                    <p className="text-white text-center sm:text-xl mx-6 sm:mx-20 lg:mx-32 xl:mx-44 mt-7 sm:mt-10 xl:mt-4">
+                    <p className="text-gray-500 font-desc text-center sm:text-xl mx-6 sm:mx-20 lg:mx-32 xl:mx-44 mt-7 sm:mt-10 xl:mt-6">
                         A practical to-do list sets you off in the right direction each day and helps you focus on the tasks that are most important to you. With the right strategies, a to-do list can help you achieve your goals.
                     </p>
 
                     <Button
                         type="link"
                         href="/app"
-                        className="flex w-40 h-14 px-7 text-xl text-white items-center bg-purple-500 rounded-full mx-auto mt-24 transform transition duration-500 hover:bg-purple-900"
+                        className="flex w-40 h-14 px-7 text-xl text-white items-center bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 rounded-full mx-auto mt-24 transform transition duration-500 hover:shadow-2xl"
                         isExternal
                     >
                         Get Started
