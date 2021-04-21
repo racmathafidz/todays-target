@@ -28,7 +28,6 @@ module.exports = {
       '9xl': '8rem'
      },
      colors: {
-      // Build your palette here
       transparent: 'transparent',
       current: 'currentColor',
       black: colors.black,
@@ -40,9 +39,9 @@ module.exports = {
       rose: colors.rose
     },
     extend: {
-      backgroundImage: theme => ({
-        'imgBackground' : "url('../images/background.jpg')"
-      })
+      spacing: {
+        '42': '10.5rem',
+      }
     },
   },
   variants: {
