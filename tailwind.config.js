@@ -1,4 +1,5 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
+const colors = require('tailwindcss/colors')
 
 module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
@@ -6,7 +7,8 @@ module.exports = {
   theme: {
     fontFamily: {
       handwriting: ['Allura'],
-      title: ['Lato']
+      title: ['Lato'],
+      desc: ['Open Sans']
     },
     fontSize: {
       'xs': '.75rem',
@@ -25,6 +27,18 @@ module.exports = {
       '8.5xl': '7rem',
       '9xl': '8rem'
      },
+     colors: {
+      // Build your palette here
+      transparent: 'transparent',
+      current: 'currentColor',
+      black: colors.black,
+      white: colors.white,
+      gray: colors.coolGray,
+      indigo: colors.indigo,
+      purple: colors.purple,
+      fuchsia: colors.fuchsia,
+      rose: colors.rose
+    },
     extend: {
       backgroundImage: theme => ({
         'imgBackground' : "url('../images/background.jpg')"
