@@ -32,7 +32,7 @@ export default function landingPage() {
                     <Button
                         type="link"
                         href="/app"
-                        className="flex w-40 h-14 p-6 text-xl text-white text-center items-center bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 rounded-full mx-auto mt-24 transform transition duration-500 hover:shadow-2xl"
+                        className="flex w-40 h-14 p-6-5 text-xl text-white text-center items-center bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 rounded-full mx-auto mt-24 transform transition duration-500 hover:shadow-2xl"
                         isExternal
                     >
                             Get Started
