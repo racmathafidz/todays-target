@@ -18,9 +18,12 @@ module.exports = {
       'lg': '1.125rem',
       'xl': '1.25rem',
       '2xl': '1.5rem',
+      '2.5xl': '1.6rem',
       '3xl': '1.875rem',
       '4xl': '2.25rem',
+      '4.5xl': '2.63rem',
       '5xl': '3rem',
+      '5.5xl': '3.5rem',
       '6xl': '4rem',
       '7xl': '5rem',
       '8xl': '6rem',
@@ -33,14 +36,19 @@ module.exports = {
       black: colors.black,
       white: colors.white,
       gray: colors.coolGray,
+      red: colors.red,
+      green: colors.green,
+      lime: colors.lime,
       indigo: colors.indigo,
       purple: colors.purple,
+      pink: colors.pink,
       fuchsia: colors.fuchsia,
       rose: colors.rose
     },
     extend: {
       spacing: {
         '42': '10.5rem',
+        '120': '30rem'
       }
     },
   },
