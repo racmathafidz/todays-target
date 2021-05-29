@@ -6,7 +6,6 @@ import DoneTarget from 'parts/DoneTarget'
 export default function appPage() {
 
     const [doTargetList, setDoTargetList] = useState([])
-    console.log(doTargetList)
 
     // Set the body background color
     useEffect(() => {
