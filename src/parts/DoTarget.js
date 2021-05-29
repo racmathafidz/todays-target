@@ -35,7 +35,7 @@ export default function DoTarget({ doTargetList, setDoTargetList }) {
         setHasError(false)
     }
 
-    const handleSubmit = event => {
+    const addTarget = event => {
         event.preventDefault()
 
         if (addNewTarget !== undefined && addNewTarget.hasOwnProperty('title') && addNewTarget.title.trim() !== "") {
@@ -51,6 +51,12 @@ export default function DoTarget({ doTargetList, setDoTargetList }) {
         } else {
             setHasError(true)
         }
+    }
+
+    const deleteTarget = index => {
+        const newTarget = [...doTargetList]
+        newTarget.splice(index, 1)
+        setDoTargetList(newTarget)
     }
 
     const openModal = () => {
@@ -93,7 +99,7 @@ export default function DoTarget({ doTargetList, setDoTargetList }) {
                     contentLabel="Add Target Modal"
                 >
                     <h1 className="text-2.5xl text-gray-700 mb-2.5">Add Your Target</h1>
-                    <form onSubmit={handleSubmit}>
+                    <form onSubmit={addTarget}>
                         <div className="flex flex-col">
                             <Form
                                 id="project-title"
@@ -136,7 +142,7 @@ export default function DoTarget({ doTargetList, setDoTargetList }) {
             </div>
 
             <div className="flex">
-                <List targetList={doTargetList} openModal={openModal} />
+                <List targetList={doTargetList} openModal={openModal} deleteTarget={deleteTarget} />
             </div>            
         </div>
     )
