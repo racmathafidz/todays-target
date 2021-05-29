@@ -3,10 +3,7 @@ import PropTypes from 'prop-types'
 
 export default function Form(props) {
 
-    const { id, name, type, value, placeholder, className, child } = props
-    const onChange = () => {
-        if (props.onChange) props.onChange()
-    }
+    const { id, name, type, value, placeholder, className, onChange, child, hasError } = props
 
     if (type === "textarea") {
         return (
@@ -25,17 +22,20 @@ export default function Form(props) {
     }
 
     return (
-        <input
-            id={id}
-            name={name}
-            type={type}
-            value={value}
-            placeholder={placeholder}
-            className={["py-2 px-3 mb-2.5 font-light text-lg text-gray-700 rounded border border-gray-400 focus:outline-none focus:ring-1 focus:ring-purple-300", className].join(" ")}
-            onChange={onChange}
-        >
-            {child}    
-        </input>
+        <div className="flex flex-col mb-2.5">
+            <input
+                id={id}
+                name={name}
+                type={type}
+                value={value}
+                placeholder={placeholder}
+                className={["py-2 px-3 font-light text-lg text-gray-700 rounded border border-gray-400 focus:outline-none focus:ring-1 focus:ring-purple-300", className].join(" ")}
+                onChange={onChange}
+            >
+                {child}    
+            </input>
+            { hasError && <span className="text-sm text-white bg-red-500 p-1 rounded">Project title can't empty.</span> }
+        </div>
     )
 }
 
