@@ -35,6 +35,16 @@ export default function Button(props) {
         )
     }
 
+    if (type == "submit") {
+        return (
+            <input 
+                type="submit" 
+                value={children}
+                className={className}
+            />
+        )
+    }
+
     return (
         <button
             className={className}
@@ -46,7 +56,7 @@ export default function Button(props) {
 }
 
 Button.PropTypes = {
-    type : PropTypes.oneOf(["button", "link"]).isRequired,
+    type : PropTypes.oneOf(["button", "link", "submit"]).isRequired,
     href : PropTypes.string,
     className : PropTypes.string,
     target : PropTypes.string,
