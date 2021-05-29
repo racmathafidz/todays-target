@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import Button from 'elements/Button'
 import BrandIcon from 'parts/BrandIcon'
 
 export default function landingPage() {
+
+    // Set the body background color
+    useEffect(() => {
+        document.body.className="landing-page"
+    })
+
     return (
         <div className="w-full h-screen bg-cover">
             <div className="flex flex-col w-full h-screen items-center">
