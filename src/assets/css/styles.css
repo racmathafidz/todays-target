@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+.landing-page {
+  @apply bg-white;
+}
+
+.app-page {
+  @apply bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-400;
+}
+
 .p-6-5 {
   padding: 1.63rem;
 }
