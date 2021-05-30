@@ -6,7 +6,8 @@ import DoneTarget from 'parts/DoneTarget'
 export default function appPage() {
 
     const [doTargetList, setDoTargetList] = useState([])
-
+    const [doneTargetList, setDoneTargetList] = useState([])
+    
     // Set the body background color
     useEffect(() => {
         document.body.className="app-page"
@@ -14,8 +15,8 @@ export default function appPage() {
 
     return (
         <div className="app-page grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-10 xl:gap-10 w-full px-4 py-3 sm:px-10 sm:py-8 xl:px-24 xl:py-22">
-            <DoTarget doTargetList={doTargetList} setDoTargetList={setDoTargetList}/>
-            <DoneTarget/>
+            <DoTarget doTargetList={doTargetList} setDoTargetList={setDoTargetList} doneTargetList={doneTargetList} setDoneTargetList={setDoneTargetList} />
+            <DoneTarget doneTargetList={doneTargetList} setTargetList={setDoneTargetList} />
         </div>
     )
 }
