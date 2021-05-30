@@ -20,7 +20,7 @@ const customStyles = {
   
 Modal.setAppElement('#root')
 
-export default function DoTarget({ doTargetList, setDoTargetList }) {
+export default function DoTarget({ doTargetList, setDoTargetList, doneTargetList, setDoneTargetList }) {
 
     let value
     const [modalIsOpen, setModalIsOpen] = useState(false)
@@ -35,6 +35,7 @@ export default function DoTarget({ doTargetList, setDoTargetList }) {
         setHasError(false)
     }
 
+    // Add Target
     const addTarget = event => {
         event.preventDefault()
 
@@ -47,22 +48,44 @@ export default function DoTarget({ doTargetList, setDoTargetList }) {
             //Close modal
             setHasError(false)
             closeModal()
-
         } else {
             setHasError(true)
         }
     }
 
+    // Delete Target
     const deleteTarget = index => {
         const newTarget = [...doTargetList]
         newTarget.splice(index, 1)
         setDoTargetList(newTarget)
     }
 
+    // Update Target
+    const updateTarget = index => {
+        let newTarget
+        
+        // Moving updated target to doneTargetList state
+        newTarget = [...doneTargetList, doTargetList[index]]
+        newTarget.map( items => {
+            items.isCompleted = true
+        })
+        setDoneTargetList(newTarget)
+
+        // Deleting updated target from doTargetList state
+        newTarget = [...doTargetList]
+        newTarget.splice(index, 1)
+        setDoTargetList(newTarget)
+
+        console.log(doTargetList)
+        console.log(doneTargetList)
+    }
+
+    // Open modal
     const openModal = () => {
         setModalIsOpen(true)
     }
 
+    // Close modal
     const closeModal = () => {
         setAddNewTarget({isCompleted : false})
         setHasError(false)
@@ -142,7 +165,7 @@ export default function DoTarget({ doTargetList, setDoTargetList }) {
             </div>
 
             <div className="flex">
-                <List targetList={doTargetList} openModal={openModal} deleteTarget={deleteTarget} />
+                <List doTargetList={doTargetList} deleteDoTarget={deleteTarget} updateTarget={updateTarget} openModal={openModal} doTarget />
             </div>            
         </div>
     )
