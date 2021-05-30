@@ -3,7 +3,7 @@ import Modal from 'react-modal'
 
 import Button from 'elements/Button'
 import Form from 'elements/Form'
-import List from 'parts/DoTargetList'
+import List from 'parts/TargetList'
 
 const customStyles = {
     content : {

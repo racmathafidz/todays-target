@@ -1,6 +1,6 @@
 import React from 'react'
 
-import List from 'parts/DoTargetList'
+import List from 'parts/TargetList'
 
 export default function DoneTarget({ doneTargetList, setTargetList }) {
 
