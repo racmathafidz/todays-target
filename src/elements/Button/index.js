@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import PropTypes from 'prop-types'
+import propTypes from 'prop-types'
 
 export default function Button(props) {
 
@@ -55,14 +55,14 @@ export default function Button(props) {
     )
 }
 
-Button.PropTypes = {
-    type : PropTypes.oneOf(["button", "link", "submit"]).isRequired,
-    href : PropTypes.string,
-    className : PropTypes.string,
-    target : PropTypes.string,
-    onClick : PropTypes.func,
+Button.propTypes = {
+    type : propTypes.oneOf(["button", "link", "submit"]).isRequired,
+    href : propTypes.string,
+    className : propTypes.string,
+    target : propTypes.string,
+    onClick : propTypes.func,
 
-    isExternal : PropTypes.bool
+    isExternal : propTypes.bool
 }
 
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import propTypes from 'prop-types'
 
 export default function Form(props) {
 
@@ -43,11 +43,11 @@ Form.defaultProps = {
 
 }
 
-Form.PropTypes = {
-    name: PropTypes.string.isRequired,
-    type: PropTypes.oneOf(["text","textarea"]).isRequired,
-    value: PropTypes.string.isRequired,
-    onChange: PropTypes.func.isRequired,
-    placeholder: PropTypes.string,
-    className: PropTypes.string
+Form.propTypes = {
+    name: propTypes.string.isRequired,
+    type: propTypes.oneOf(["text","textarea"]).isRequired,
+    value: propTypes.string.isRequired,
+    onChange: propTypes.func.isRequired,
+    placeholder: propTypes.string,
+    className: propTypes.string
 }
