@@ -14,25 +14,25 @@ export default function appPage() {
         document.body.className="app-page"
     })
 
-    // Getting local storage data
+    //Getting local storage data
     useEffect(() => {
         let target
+        
+        //Getting do target list
+        target = JSON.parse(localStorage.getItem('doTarget') || JSON.stringify([]))
+        setDoTargetList(target)
 
-        // Getting do target list
-        target = JSON.parse(localStorage.getItem('doTarget'))
-        if ( target !== "" ) setDoTargetList(target)
-
-        // Getting done target list
-        target = JSON.parse(localStorage.getItem('doneTarget'))
-        if ( target !== "" ) setDoneTargetList(target)
+        //Getting done target list
+        target = JSON.parse(localStorage.getItem('doneTarget') || JSON.stringify([]))
+        setDoneTargetList(target)
     }, [])
 
     // Setting local storage data
     useEffect(() => {
-        // Setting do target list
+        //Setting do target list
         localStorage.setItem('doTarget', JSON.stringify(doTargetList))
 
-        // Setting done target list
+        //Setting done target list
         localStorage.setItem('doneTarget', JSON.stringify(doneTargetList))
     }, [doTargetList, doneTargetList])
 
@@ -96,7 +96,7 @@ export default function appPage() {
             }
         }
     }
-
+    
     return (
         <div className="app-page grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-10 xl:gap-10 w-full px-4 py-3 sm:px-10 sm:py-8 xl:px-24 xl:py-22">
             <DragDropContext onDragEnd={handleOnDragEnd}>
@@ -105,4 +105,5 @@ export default function appPage() {
             </DragDropContext>
         </div>
     )
+
 }
