@@ -5,6 +5,7 @@ import Button from 'elements/Button'
 import Form from 'elements/Form'
 import List from 'parts/TargetList'
 
+// Modal styles
 const customStyles = {
     content : {
       top                   : '50%',
@@ -27,7 +28,8 @@ export default function DoTarget({ doTargetList, setDoTargetList, doneTargetList
     const [hasError, setHasError] = useState(false)
     const [addNewTarget, setAddNewTarget] = useState({isCompleted : false})
 
-    const handleTitleChange = event => {
+    // Handling modal's inputting target form change
+    const handleFormChange = event => {
         setAddNewTarget({
             ...addNewTarget,
             [event.target.name]: event.target.value
@@ -37,6 +39,7 @@ export default function DoTarget({ doTargetList, setDoTargetList, doneTargetList
 
     // Add Target
     const addTarget = event => {
+
         event.preventDefault()
 
         if (addNewTarget !== undefined && addNewTarget.hasOwnProperty('title') && addNewTarget.title.trim() !== "") {
@@ -75,9 +78,6 @@ export default function DoTarget({ doTargetList, setDoTargetList, doneTargetList
         newTarget = [...doTargetList]
         newTarget.splice(index, 1)
         setDoTargetList(newTarget)
-
-        console.log(doTargetList)
-        console.log(doneTargetList)
     }
 
     // Open modal
@@ -131,7 +131,7 @@ export default function DoTarget({ doTargetList, setDoTargetList, doneTargetList
                                 value={value}
                                 placeholder="Project Title"
                                 className="sm:w-120"
-                                onChange={handleTitleChange}
+                                onChange={handleFormChange}
                                 hasError={hasError}
                             />
                             <Form
@@ -141,7 +141,7 @@ export default function DoTarget({ doTargetList, setDoTargetList, doneTargetList
                                 value={value}
                                 placeholder="Project Description (Optional)"
                                 className="sm:w-120"
-                                onChange={handleTitleChange}
+                                onChange={handleFormChange}
                             />
                         </div>
                         <div className="flex flex-row-reverse mt-2">

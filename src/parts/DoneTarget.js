@@ -4,6 +4,7 @@ import List from 'parts/TargetList'
 
 export default function DoneTarget({ doneTargetList, setTargetList }) {
 
+    // Delete Target
     const deleteTarget = index => {
         const newTarget = [...doneTargetList]
         newTarget.splice(index, 1)
