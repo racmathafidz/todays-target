@@ -1,6 +1,5 @@
 # Today's Target
-
-[GIF]
+![screen-gif](https://github.com/racmathafidz/todays-target/blob/master/src/assets/images/project.gif)
 
 ### About
 A to-do list app that sets you off in the right direction each day and helps you focus on the tasks that are most important to you:dart:. 
