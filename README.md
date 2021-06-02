@@ -3,7 +3,8 @@
 [GIF]
 
 ### About
-An to-do-list app ....
+A to-do list app that sets you off in the right direction each day and helps you focus on the tasks that are most important to youdart.\ 
+Built with ReactJS, TailwindCSS and React Hooks.
 
 ### Tech Stack
 - [**ReactJS**](https://github.com/facebook/create-react-app)
