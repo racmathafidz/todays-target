@@ -3,7 +3,7 @@
 
 ### About
 A to-do list app that sets you off in the right direction each day and helps you focus on the tasks that are most important to you:dart:. 
-Built with ReactJS, TailwindCSS and React Hooks.
+Built with ReactJS, TailwindCSS, React Hooks and LocalStorage.
 
 ### Tech Stack
 - [**ReactJS**](https://github.com/facebook/create-react-app)
