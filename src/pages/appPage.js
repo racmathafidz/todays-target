@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { DragDropContext } from "react-beautiful-dnd"
+import { DragDropContext } from 'react-beautiful-dnd'
 
 import DoTarget from 'parts/DoTarget'
 import DoneTarget from 'parts/DoneTarget'
