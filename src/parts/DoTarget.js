@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import Modal from 'react-modal'
+import Zoom from 'react-reveal/Zoom';
 
 import Button from 'elements/Button'
 import Form from 'elements/Form'
@@ -115,53 +116,55 @@ export default function DoTarget({ doTargetList, setDoTargetList, doneTargetList
                     </svg>
                 </Button>
 
-                <Modal
-                    isOpen={modalIsOpen}
-                    onRequestClose={closeModal}
-                    style={customStyles}
-                    contentLabel="Add Target Modal"
-                >
-                    <h1 className="text-2.5xl text-gray-700 mb-2.5">Add Your Target</h1>
-                    <form onSubmit={addTarget}>
-                        <div className="flex flex-col">
-                            <Form
-                                id="project-title"
-                                name="title"
-                                type="text"
-                                value={value}
-                                placeholder="Project Title"
-                                className="sm:w-120"
-                                onChange={handleFormChange}
-                                hasError={hasError}
-                            />
-                            <Form
-                                id="project-description"
-                                name="description"
-                                type="textarea"
-                                value={value}
-                                placeholder="Project Description (Optional)"
-                                className="sm:w-120"
-                                onChange={handleFormChange}
-                            />
-                        </div>
-                        <div className="flex flex-row-reverse mt-2">
-                            <Button
-                                type="submit"
-                                className="cursor-pointer w-32 h-11 text-white bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 rounded-xl transform transition duration-500 focus:outline-none hover:shadow-lg"                            
-                            >
-                                Submit
-                            </Button>
+                <Zoom>
+                    <Modal
+                        isOpen={modalIsOpen}
+                        onRequestClose={closeModal}
+                        style={customStyles}
+                        contentLabel="Add Target Modal"
+                    >
+                        <h1 className="text-2.5xl text-gray-700 mb-2.5">Add Your Target</h1>
+                        <form onSubmit={addTarget}>
+                            <div className="flex flex-col">
+                                <Form
+                                    id="project-title"
+                                    name="title"
+                                    type="text"
+                                    value={value}
+                                    placeholder="Project Title"
+                                    className="sm:w-120"
+                                    onChange={handleFormChange}
+                                    hasError={hasError}
+                                />
+                                <Form
+                                    id="project-description"
+                                    name="description"
+                                    type="textarea"
+                                    value={value}
+                                    placeholder="Project Description (Optional)"
+                                    className="sm:w-120"
+                                    onChange={handleFormChange}
+                                />
+                            </div>
+                            <div className="flex flex-row-reverse mt-2">
+                                <Button
+                                    type="submit"
+                                    className="cursor-pointer w-32 h-11 text-white bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 rounded-xl transform transition duration-500 focus:outline-none hover:shadow-lg"                            
+                                >
+                                    Submit
+                                </Button>
 
-                            <Button 
-                                type="button"
-                                className="w-24 h-11 text-gray-400 mr-1 focus:outline-none"
-                                onClick={closeModal}
-                            >
-                                Cancel
-                            </Button>
-                        </div>
-                    </form>
-                </Modal>
+                                <Button 
+                                    type="button"
+                                    className="w-24 h-11 text-gray-400 mr-1 focus:outline-none"
+                                    onClick={closeModal}
+                                >
+                                    Cancel
+                                </Button>
+                            </div>
+                        </form>
+                    </Modal>
+                </Zoom>
             </div>
 
             <div className="flex">
