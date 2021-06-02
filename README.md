@@ -3,7 +3,7 @@
 [GIF]
 
 ### About
-A to-do list app that sets you off in the right direction each day and helps you focus on the tasks that are most important to you:dart:.\ 
+A to-do list app that sets you off in the right direction each day and helps you focus on the tasks that are most important to you:dart:. 
 Built with ReactJS, TailwindCSS and React Hooks.
 
 ### Tech Stack
