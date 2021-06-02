@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 import landingPage from 'pages/landingPage'
 import appPage from 'pages/appPage'
+import notFoundPage from 'pages/notFoundPage'
 
 import 'assets/css/styles.css';
 
@@ -10,6 +11,7 @@ function App() {
     <Switch>
       <Route exact path="/" component={landingPage} />
       <Route exact path="/app" component={appPage} />
+      <Route path="" component={notFoundPage} />
     </Switch>
   );
 }
