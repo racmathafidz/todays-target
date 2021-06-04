@@ -12,7 +12,7 @@ export default function landingPage() {
     })
 
     return (
-        <div className="overflow-hidden w-full h-screen bg-cover">
+        <div className="sm:overflow-hidden w-full h-screen bg-cover">
             <div className="flex flex-col w-full h-screen items-center">
                 <div className="container px-4 lg:px-5 xl:px-3 flex justify-between py-5 items-center">
                     <Slide bottom>
@@ -45,7 +45,7 @@ export default function landingPage() {
                         <Button
                             type="link"
                             href="/app"
-                            className="flex w-40 h-14 p-6-5 text-xl text-white text-center items-center bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 rounded-full mx-auto mt-24 transform transition duration-500 hover:shadow-2xl"
+                            className="flex w-40 h-14 p-6-5 mb-5 text-xl text-white text-center items-center bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 rounded-full mx-auto mt-24 transform transition duration-500 hover:shadow-2xl"
                         >
                                 Get Started
                         </Button>
