@@ -131,7 +131,7 @@ export default function DoTarget({ doTargetList, setDoTargetList, doneTargetList
                                     name="title"
                                     type="text"
                                     value={value}
-                                    placeholder="Project Title"
+                                    placeholder="Target Title"
                                     className="sm:w-120"
                                     onChange={handleFormChange}
                                     hasError={hasError}
@@ -141,7 +141,7 @@ export default function DoTarget({ doTargetList, setDoTargetList, doneTargetList
                                     name="description"
                                     type="textarea"
                                     value={value}
-                                    placeholder="Project Description (Optional)"
+                                    placeholder="Target Description (Optional)"
                                     className="sm:w-120"
                                     onChange={handleFormChange}
                                 />
