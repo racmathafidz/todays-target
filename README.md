@@ -9,15 +9,16 @@ Built with ReactJS, TailwindCSS, React Hooks and LocalStorage.
 - [**ReactJS**](https://github.com/facebook/create-react-app)
 - [**PostCSS**](https://postcss.org/)
 - [**TailwindCSS**](https://tailwindcss.com/)
-- [**Vercel**](https://vercel.com/)
+- [**Netlify**](https://netlify.com/)
 
 ### Library
 - [**React Modal**](https://www.npmjs.com/package/react-modal) : Show modal
 - [**React Beautiful DnD**](https://github.com/atlassian/react-beautiful-dnd) : Drag and drop item
 - [**React Reveal**](https://www.react-reveal.com/) : Animation 
+- [**ESLint**](https://eslint.org/) : Linting and formatting
 
 ### Demo
-**Demo :** https://todays-target.vercel.app/
+**Demo :** https://todays-target.netlify.app/
 
 ### Available Scripts
 
