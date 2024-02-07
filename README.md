@@ -2,7 +2,7 @@
 ![screen-gif](https://github.com/racmathafidz/todays-target/blob/master/src/assets/images/project.gif)
 
 ### About
-A to-do list app that sets you off in the right direction each day and helps you focus on the tasks that are most important to you:dart:. 
+A to-do list app that sets you off in the right direction each day and helps you focus on the tasks that are most important to you :dart:. 
 Built with ReactJS, TailwindCSS, React Hooks and LocalStorage.
 
 ### Tech Stack
@@ -18,7 +18,7 @@ Built with ReactJS, TailwindCSS, React Hooks and LocalStorage.
 - [**ESLint**](https://eslint.org/) : Linting and formatting
 
 ### Demo
-**Demo :** https://todays-target.netlify.app/
+**Demo :** [**todays-target.vercel.app**](https://todays-target.vercel.app)
 
 ### Available Scripts
 
