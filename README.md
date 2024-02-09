@@ -9,7 +9,7 @@ Built with ReactJS, TailwindCSS, React Hooks and LocalStorage.
 - [**ReactJS**](https://github.com/facebook/create-react-app)
 - [**PostCSS**](https://postcss.org/)
 - [**TailwindCSS**](https://tailwindcss.com/)
-- [**Netlify**](https://netlify.com/)
+- [**Vercel**](https://vercel.com/)
 
 ### Library
 - [**React Modal**](https://www.npmjs.com/package/react-modal) : Show modal
